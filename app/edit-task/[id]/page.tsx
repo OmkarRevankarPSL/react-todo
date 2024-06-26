@@ -9,7 +9,8 @@ import EditTaskForm from '@/app/components/EditTaskForm';
 const EditTask: React.FC = () => {
   const id = useParams<{ id: string }>();
   const task = useTodoById(id.id).data;
-  return <EditTaskForm task={task!} />;
+  if(task)
+  return <EditTaskForm task={task} />;
 };
 const queryClient = new QueryClient();
 

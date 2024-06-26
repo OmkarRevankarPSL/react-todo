@@ -34,7 +34,7 @@
       "id": "31a8a169-d163-4553-b46e-204e20454cb7",
       "title": "aaa",
       "description": "aaa",
-      "isDone": false,
+      "isDone": true,
       "startDate": "",
       "endDate": ""
     },
@@ -51,16 +51,16 @@
       "title": "datee",
       "description": "datee",
       "isDone": false,
-      "startDate": "2024-06-21T08:23:48.170Z",
-      "endDate": "2024-06-21T08:23:48.170Z"
+      "startDate": "2024-06-21",
+      "endDate": "2024-06-21"
     },
     {
       "id": "dc72fec7-b307-440b-8a7c-2a4c2d77a26d",
       "title": "date",
       "description": "date",
       "isDone": false,
-      "startDate": "2024-06-21T08:23:48.170Z",
-      "endDate": "2024-06-21T08:23:48.170Z"
+      "startDate": "2024-06-21",
+      "endDate": "2024-06-21"
     },
     {
       "id": "d3196b74-77de-415a-a517-f8bf1e9bf278",
@@ -107,14 +107,6 @@
       "isDone": false,
       "startDate": "10-06-2024",
       "endDate": "11-06-2024"
-    },
-    {
-      "id": "2e63c00a-1af4-417a-ae64-372558b63cda",
-      "title": "Select",
-      "description": "Select",
-      "isDone": false,
-      "startDate": "03-06-2024",
-      "endDate": "03-06-2024"
     }
   ]
 }

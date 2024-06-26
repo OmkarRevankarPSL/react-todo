@@ -29,8 +29,14 @@ export const createTodo = async (data: TodoType)=>{
 }
 
 export const updateTodo =async (data:TodoType)=>{
-    await axiosInstance.put(`tasks/${data.id}`, data)
+    console.log("Editing the Task!!!")
+    try{
+    await axiosInstance.put(`tasks/${data.id}`, data)}
+    catch(error){
+        console.log("Something went wrong!!: ", error)
+    }
 }
+
 
 export const deleteTodo = async (id:string)=>{
     console.log("Deleting id: ", id)
@@ -39,4 +45,8 @@ export const deleteTodo = async (id:string)=>{
 
 export const getPages = async(page=1)=>{
     (await axiosInstance.get<TodoType[]>(`tasks?_page=${page}&_limit=3`)).data;
+}
+
+export const getBySearch = async (searchTitle: string)=>{
+    return (await axiosInstance.get<TodoType[]>(`tasks?title=${searchTitle}`)).data;
 }

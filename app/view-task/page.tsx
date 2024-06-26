@@ -7,7 +7,11 @@ import Link from 'next/link';
 import { EditOutlined } from '@ant-design/icons';
 import RemoveBtn from '../components/RemoveBtn';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import styles from './page.module.css'
+import CompleteBtn from '../components/CompleteBtn';
+import SearchTodo from '../components/SearchTodo';
 const queryClient = new QueryClient();
+
 
 type OnChange = NonNullable<TableProps<TodoType>['onChange']>;
 type GetSingle<T> = T extends (infer U)[] ? U : never;
@@ -26,7 +30,6 @@ export default function App() {
       title: 'Title',
       dataIndex: 'title',
       key: 'name',
-      width: 200,
       sorter: (a, b) =>{ if(a.title < b.title) return -1; if(a.title > b.title) return 1; return 0},
       sortOrder: sortedInfo.columnKey === 'name' ? sortedInfo.order : null,
       ellipsis: true,
@@ -38,7 +41,6 @@ export default function App() {
       title: 'Description',
       dataIndex: 'description',
       key: 'description',
-      width: 700,
       className: 'overflow-clip',
       ellipsis: true,
     },
@@ -46,24 +48,23 @@ export default function App() {
       title: 'Start Date',
       dataIndex: 'startDate',
       key: 'startDate',
-      width: 150,
     },
     {
       title: 'End Date',
       dataIndex: 'endDate',
       key: 'endDate',
-      width: 150,
     },
     {
       title: 'Action',
       key: 'action',
-      width: 100,
+      responsive: ["sm"],
       render: (_, record) => (
         <Space size='middle'>
           <Link href={`edit-task/${record.id}`}>
             <EditOutlined key='edit' />
           </Link>
-          <RemoveBtn id={record.id} />
+          <RemoveBtn id={record.id}/>
+          <CompleteBtn data={record}/>
         </Space>
       ),
     },
@@ -71,13 +72,18 @@ export default function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <div className='mt-5 '>
+      <SearchTodo/>
       <Table
-        className='table-fixed px-5 m-5'
-        pagination={{ pageSize: 23 }}
+        className=' px-5 m-5'
+        pagination={{ pageSize: 5 }}
         columns={columns}
         dataSource={data}
         onChange={handleChange}
+        rowClassName={(record) => record.isDone? styles.strikethrough: ''}
       />
+      </div>
     </QueryClientProvider>
+
   );
 }

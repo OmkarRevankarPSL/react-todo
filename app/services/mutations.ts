@@ -33,6 +33,7 @@ export function useUpdateTodo() {
     const queryClient = useQueryClient();
     return useMutation({
         mutationFn: (data: TodoType) => updateTodo(data),
+        onSuccess:(_,data)=>{console.log("Success: ", data.isDone)},
         onSettled: async (_, error, variables) => {
             if (error) {
                 console.log(error)

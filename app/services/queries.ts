@@ -1,5 +1,5 @@
 import { keepPreviousData, useQueries, useQuery } from "@tanstack/react-query";
-import { deleteTodo, getPages, getTodoById, getTodoByIds, getTodoIds } from "./api";
+import {  getBySearch, getPages, getTodoById, getTodoByIds, getTodoIds } from "./api";
 
 export function useTodoIds() {
     return useQuery({
@@ -34,3 +34,10 @@ export function useTodosPagination(page: number) {
     })
 }
 
+export function useSearchTodos(searchTitle: string){
+    return useQuery({
+        queryKey: ['todos', {searchTitle}],
+        queryFn: () => getBySearch(searchTitle),
+        
+    })
+}

@@ -1,6 +1,6 @@
-import { getBySearch } from "@/apis";
 import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
+import { getBySearch } from "../services/api";
 
 export type TodoType = {
     id: string,
@@ -49,7 +49,6 @@ export const todoStore = create<States & Actions>()(
             searchByTitle: async (title: string) => {
                 try {
                     const response = await getBySearch(title);
-
                     set({ todos: response })
                 }
                 catch (error) {
