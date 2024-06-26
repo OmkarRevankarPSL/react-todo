@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { DatePicker, Form, Input, Button, FormProps } from 'antd';
 import { TodoType, todoStore } from '../state/todoStore';
 import { useCreateTodo } from '../services/mutations';
@@ -10,16 +10,16 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
+
 type FromValues = {
   title: string;
   description: string;
   duration: [Moment, Moment];
 };
 const AddTask: React.FC = () => {
-  const form = useForm();
+  const [form] = Form.useForm();
   const todoState = todoStore();
   const createTodoMutation = useCreateTodo();
-
 
   const onFinish: FormProps<FromValues>['onFinish'] = async (values) => {
     const todo: TodoType = {
@@ -43,6 +43,8 @@ const AddTask: React.FC = () => {
   return (
     <>
       <Form
+        form={form}
+        name='add_form'
         className='bg-gray-300 text-white rounded w-2/4 self-center'
         labelCol={{ span: 6 }}
         wrapperCol={{ span: 16 }}
@@ -50,7 +52,7 @@ const AddTask: React.FC = () => {
         style={{ maxWidth: 600 }}
         autoComplete='off'
         onFinish={onFinish}
-        initialValues={{ isDone: true }}
+        initialValues={{ isDone: false }}
         onFinishFailed={onFinishFailed}
       >
         <Form.Item
