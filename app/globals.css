@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+     background-color: whitesmoke;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  display: block; 
+  font-size: small;
+   width: 55%;
+}
+/* .react-datepicker__portal {
+     width: 75vh !important;
+     height: 40vh !important;
+} */

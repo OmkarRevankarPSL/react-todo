@@ -1,0 +1,120 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Buy an Airpod 2nd Gen",
+      "description": "Shop for an Airpod on online.com",
+      "isDone": true
+    },
+    {
+      "id": "2",
+      "title": "Learn NextJs 13",
+      "description": "Follow the steps mentioned in course to complete the tutorial.",
+      "isDone": true
+    },
+    {
+      "id": "ca2ccb56-091a-466d-947a-a0d202858d35",
+      "title": "Visit Office",
+      "description": "Visit goa office",
+      "isDone": false
+    },
+    {
+      "id": "4a537f9b-5ea9-4205-9993-34e49cca93e5",
+      "title": "Plan for trip",
+      "description": "Lets plan Munnar!",
+      "isDone": false
+    },
+    {
+      "id": "3fa9f9e4-0f1d-435d-bd0e-0951fa542384",
+      "title": "Connect with APIs",
+      "description": "Use Dummy json api",
+      "isDone": false
+    },
+    {
+      "id": "31a8a169-d163-4553-b46e-204e20454cb7",
+      "title": "aaa",
+      "description": "aaa",
+      "isDone": false,
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "id": "483fe6dc-8bab-4e6f-b1de-e5df10070ab2",
+      "title": "Change it",
+      "description": "Changing it",
+      "isDone": false,
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "id": "b18a46f0-94f3-4651-b6c3-db92feb59b53",
+      "title": "datee",
+      "description": "datee",
+      "isDone": false,
+      "startDate": "2024-06-21T08:23:48.170Z",
+      "endDate": "2024-06-21T08:23:48.170Z"
+    },
+    {
+      "id": "dc72fec7-b307-440b-8a7c-2a4c2d77a26d",
+      "title": "date",
+      "description": "date",
+      "isDone": false,
+      "startDate": "2024-06-21T08:23:48.170Z",
+      "endDate": "2024-06-21T08:23:48.170Z"
+    },
+    {
+      "id": "d3196b74-77de-415a-a517-f8bf1e9bf278",
+      "title": "aaa",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "isDone": false
+    },
+    {
+      "id": "077e33a1-02b9-4a00-bc3d-0e9bdd35e743",
+      "title": "eeeeeeeeee",
+      "description": "eeeee",
+      "isDone": false,
+      "startDate": "03-06-2024",
+      "endDate": "11-07-2024"
+    },
+    {
+      "id": "eecd0f3d-ef9f-4dfc-b884-e15c15370565",
+      "title": "aaeea",
+      "description": "asasa",
+      "isDone": false,
+      "startDate": "02-06-2024",
+      "endDate": "03-06-2024"
+    },
+    {
+      "id": "21fb5d44-8fba-47e2-8635-402ae20ab48d",
+      "title": "Something",
+      "description": "something",
+      "isDone": false,
+      "startDate": "02-06-2024",
+      "endDate": "03-06-2024"
+    },
+    {
+      "id": "235601bb-bdb8-4949-85a1-c18b7482e66f",
+      "title": "11111",
+      "description": "11",
+      "isDone": false,
+      "startDate": "02-06-2024",
+      "endDate": "03-06-2024"
+    },
+    {
+      "id": "31027238-fe1b-436b-bf59-b6267e873c73",
+      "title": "tests",
+      "description": "tests",
+      "isDone": false,
+      "startDate": "10-06-2024",
+      "endDate": "11-06-2024"
+    },
+    {
+      "id": "2e63c00a-1af4-417a-ae64-372558b63cda",
+      "title": "Select",
+      "description": "Select",
+      "isDone": false,
+      "startDate": "03-06-2024",
+      "endDate": "03-06-2024"
+    }
+  ]
+}

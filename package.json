@@ -1,0 +1,50 @@
+{
+  "name": "todo-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "json-server": "json-server --watch data/todos.json --port 3002"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@headlessui/react": "^2.0.4",
+    "@heroicons/react": "^2.1.4",
+    "@tanstack/react-query": "^5.45.1",
+    "@tanstack/react-query-devtools": "^5.45.1",
+    "@types/uuid": "^9.0.8",
+    "antd": "^5.18.3",
+    "axios": "^1.7.2",
+    "json-server": "^1.0.0-beta.1",
+    "lodash.debounce": "^4.0.8",
+    "moment": "^2.30.1",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-date-range": "^2.0.1",
+    "react-datepicker": "^7.1.0",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
+    "uuid": "^10.0.0",
+    "uuidv4": "^6.2.13",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.43.1",
+    "@types/lodash.debounce": "^4.0.9",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-date-range": "^1.4.9",
+    "@types/react-datepicker": "^6.2.0",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
